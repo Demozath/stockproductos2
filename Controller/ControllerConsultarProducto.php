@@ -1,18 +1,10 @@
-
-
-
-
 <?php
 include('../Model/ModeloConsultarProducto.php');
 
 $codigoProducto = $_POST['codigoProducto'];
 $nombreProducto = $_POST['NombreProducto'];
 $sucursal = isset($_POST['sucursal']) ? $_POST['sucursal'] : null; 
-
 $objlus = new ModeloConsultarProducto();
-
-
-
 
 if($codigoProducto){
     $resultado =$objlus->ConsultarProducto($codigoProducto);
@@ -20,10 +12,6 @@ if($codigoProducto){
 else if($nombreProducto){
     $resultado = $objlus->ConsultarProductoNombre($nombreProducto);
 }
-
-
-
-
 
 ?>
 <html>
@@ -56,8 +44,5 @@ foreach ($resultado as $fila) {
     echo '<tr><td>'.$codigoProducto.'</td> <td>'.$nombreProducto.'</td> <td>'.$categoriaProducto.'</td> <td>'.$descripcion.'</td> <td>'.$sucursal.'</td> <td>'.$cantidadProducto.'</td> <td>'.$precioProducto.'</td></tr>';
 }
 ?>
-
-
 </table>
-
 <input type="button" value="Ir al Home" id="botonHome" OnClick="location.href='../Views/home.php' ">
