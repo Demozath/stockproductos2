@@ -3,7 +3,7 @@ include('conexion.php');
 class ModeloAsignarProducto{
 	public function insertarproducto($codigo,$nombre,$categoria,$sucursal,$descripcion,$cantidad,$precio){
 		$query = "INSERT INTO stockproductos (CODIGO_PRODUCTO,NOMBRE_PRODUCTO,CATEGORIA_PRODUCTO,SUCURSAL_PRODUCTO,DESCRIPCION_PRODUCTO,CANTIDAD_PRODUCTO,PRECIO_PRODUCTO) VALUES($codigo,'$nombre','$categoria','$sucursal','$descripcion',$cantidad,$precio)";
-		$stringConnection = conexion::conecta();
+		$stringConnection = Conexion::conecta();
 
 		if(mysqli_query($stringConnection, $query)){
             $nfilas = mysqli_affected_rows($stringConnection);
@@ -20,4 +20,5 @@ class ModeloAsignarProducto{
 
         return $msj;
 	}
+    }
     ?>
