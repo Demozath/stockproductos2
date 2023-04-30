@@ -6,11 +6,7 @@ var key = window.Event ? e.which : e.keyCode
 }
 
 function validar(){
-    mensaje="";
-    var  productoId = document.getElementById("productoID").value;
-    if (productoId=="") {
-        mensaje=mensaje+"*ID Producto NO ingresado \n";
-    }
+  
     var codigoProducto = document.getElementById("codigoProducto").value;
     if (codigoProducto=="") {
         mensaje=mensaje+"* Codigo Producto NO ingresado \n";
