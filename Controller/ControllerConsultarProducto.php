@@ -1,15 +1,30 @@
+
+
+
+
 <?php
 include('../Model/ModeloConsultarProducto.php');
 
 $codigoProducto = $_POST['codigoProducto'];
-//$nombreProducto = $_POST['NombreProducto'];
-//$sucursal = $_POST['sucursal'];
-
-//instancia
+$nombreProducto = $_POST['NombreProducto'];
+$sucursal = isset($_POST['sucursal']) ? $_POST['sucursal'] : null; 
 
 $objlus = new ModeloConsultarProducto();
-$resultado = $objlus->ConsultarProducto($codigoProducto);
-//,$nombreProducto,$sucursal
+
+
+
+
+if($codigoProducto){
+    $resultado =$objlus->ConsultarProducto($codigoProducto);
+}
+else if($nombreProducto){
+    $resultado = $objlus->ConsultarProductoNombre($nombreProducto);
+}
+
+
+
+
+
 ?>
 <html>
 <head>
