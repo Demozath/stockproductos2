@@ -11,10 +11,12 @@ $precioProducto = $_POST['precio'];
 
 $objMAP = new ModeloAsignarProducto();
 $msj = $objMAP->insertarproducto($codigoProducto,$nombreProducto,$categoriaProducto,$sucursal,$descripcion,$cantidadProducto,$precioProducto);
-echo $msj;
 
+echo "<center><h1>".$msj."</h1></center>";
 
 ?>
+<link href="../Estilos/estiloController.css" rel="stylesheet" type="text/css">
+<input type="button" value="Ir al Home" id="botonHome" OnClick="location.href='../Views/home.php' ">
 
 
 
