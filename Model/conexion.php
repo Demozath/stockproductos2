@@ -15,9 +15,7 @@ class Conexion {
         catch(mysqli_sql_exception $error){
             print $error->getMessage();
             exit();
-        }
+        }   
     }
 }
-
-
 ?>
