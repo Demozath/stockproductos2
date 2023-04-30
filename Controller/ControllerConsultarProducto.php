@@ -17,8 +17,8 @@ $resultado = $objlus->ConsultarProducto($codigoProducto);
     <title>Consultar Productos</title>
 </head>
 <body>
-    <h1>Productos - Búsqueda</h1><br>
-    <table border="1">
+    <center><h1>Productos - Búsqueda</h1></center><br>
+    <table>
         <tr>
             <th>Codigo</th> 
             <th>Nombre</th> 
