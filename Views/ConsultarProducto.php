@@ -11,11 +11,11 @@ function validar(){
     if (codigoProducto=="") {
         mensaje=mensaje+"* Codigo Producto NO ingresado \n";
     }
-/*     var nombreProducto = document.getElementById("NombreProducto").value;
+     var nombreProducto = document.getElementById("NombreProducto").value;
     if (nombreProducto=="") {
         mensaje=mensaje+"* Nombre del producto NO ingresados \n";
     }
-    var sucursal = document.getElementById("sucursal").value;
+   var sucursal = document.getElementById("sucursal").value;
     if (sucursal=="") {
         mensaje=mensaje+"* Sucursal NO ingresada \n";
     }
@@ -39,8 +39,8 @@ function validar(){
         Codigo Producto
         <input type="text"  id="codigoProducto" name="codigoProducto" onkeypress="return soloNumeros(event)">
         Nombre Producto
-<!--         <input type="text"	id="NombreProducto" name="NombreProducto">
-        <label for="sucursal">Sucursal</label>
+         <input type="text"	id="nombreProducto" name="NombreProducto">
+ <!--       <label for="sucursal">Sucursal</label>
             <select id="sucursal" name="sucursal">
             <option disabled selected value>-- Selecciona Sucursal -- </option>
             <option value="Santiago">Santiago</option>
