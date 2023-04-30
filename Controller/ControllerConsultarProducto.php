@@ -41,4 +41,8 @@ foreach ($resultado as $fila) {
     echo '<tr><td>'.$codigoProducto.'</td> <td>'.$nombreProducto.'</td> <td>'.$categoriaProducto.'</td> <td>'.$descripcion.'</td> <td>'.$sucursal.'</td> <td>'.$cantidadProducto.'</td> <td>'.$precioProducto.'</td></tr>';
 }
 ?>
+
+
 </table>
+
+<input type="button" value="Ir al Home" id="botonHome" OnClick="location.href='../Views/home.php' ">
