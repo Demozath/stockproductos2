@@ -11,13 +11,25 @@ $objlus = new ModeloConsultarProducto();
 $resultado = $objlus->ConsultarProducto($codigoProducto);
 //,$nombreProducto,$sucursal
 ?>
-
-<table border="1">
-    <tr><td>Codigo</td> <td>Nombre</td> <td>Categoria</td> <td>Descripcion</td> <td>Sucursal</td> <td>Cantidad</td> <td>Precio</td> </tr>
-
+<html>
+<head>
+<link href="../Estilos/estiloController.css" rel="stylesheet" type="text/css">
+    <title>Consultar Productos</title>
+</head>
+<body>
+    <h1>Productos - Búsqueda</h1><br>
+    <table border="1">
+        <tr>
+            <th>Codigo</th> 
+            <th>Nombre</th> 
+            <th>Categoria</th> 
+            <th>Descripcion</th> 
+            <th>Sucursal</th> 
+            <th>Cantidad</th> 
+            <th>Precio</th> 
+        </tr>
 <?php
 foreach ($resultado as $fila) { 
-    
     $codigoProducto = $fila['CODIGO_PRODUCTO'];
     $nombreProducto = $fila['NOMBRE_PRODUCTO'];
     $categoriaProducto = $fila['CATEGORIA_PRODUCTO'];
