@@ -1,0 +1,67 @@
+		body {
+			background-image: url("https://images.unsplash.com/photo-1561715276-a2d087060f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+			background-size: cover;
+			font-family: Arial, sans-serif;
+		}
+
+		table {
+			margin: 50px auto;
+			border-collapse: collapse;
+			background-color: rgba(255, 255, 255, 0.8);
+			border-radius: 10px;
+			overflow: hidden;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+
+		th, td {
+			padding: 10px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+
+		th {
+			background-color: #1e90ff;
+			color: #fff;
+		}
+
+		input[type="text"] {
+			display: block;
+			margin: 10px auto;
+			padding: 10px;
+			width: 100%;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+
+		button[type="submit"] {
+			display: block;
+			margin: 10px auto;
+			padding: 10px 20px;
+			background-color: #1e90ff;
+			color: #fff;
+			font-weight: bold;
+			cursor: pointer;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+
+		button[type="submit"]:hover {
+			background-color: #0080ff;
+		}
+		input[type="button"] {
+			display: block;
+			margin: 10px auto;
+			padding: 10px 20px;
+			background-color: #1e90ff;
+			color: #fff;
+			font-weight: bold;
+			cursor: pointer;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		input[type="button"]:hover {
+			background-color: #0080ff;
+		}
