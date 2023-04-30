@@ -18,7 +18,7 @@ class ModeloAsignarProducto{
             $msj = "Error al ejecutar la query";
         }
 
-        return $query;
+        return $msj;
 	}
     }
     ?>
