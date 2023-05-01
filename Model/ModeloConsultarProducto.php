@@ -5,11 +5,7 @@ class ModeloConsultarProducto{
     public function ConsultarProducto($codigoProducto, $sucursal = null){
         $query = "SELECT * FROM producto WHERE (CODIGO_PRODUCTO) = ($codigoProducto)";
         if($sucursal !==null){
-<<<<<<< HEAD
             $queryNombre = "AND SUCURSAL_PRODUCTO = '$sucursal'";
-=======
-            $query .= "AND SUCURSAL_PRODUCTO = '$sucursal'";
->>>>>>> branchabel
         }
         $link = conexion::conecta();
         $resultado = mysqli_query($link, $query);
