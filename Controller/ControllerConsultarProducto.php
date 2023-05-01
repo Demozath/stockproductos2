@@ -7,10 +7,10 @@ $sucursal = isset($_POST['sucursal']) ? $_POST['sucursal'] : null;
 $objlus = new ModeloConsultarProducto();
 
 if($codigoProducto){
-    $resultado =$objlus->ConsultarProducto($codigoProducto);
+    $resultado =$objlus->ConsultarProducto($codigoProducto, $sucursal);
 }
 else if($nombreProducto){
-    $resultado = $objlus->ConsultarProductoNombre($nombreProducto);
+    $resultado = $objlus->ConsultarProductoNombre($nombreProducto, $sucursal);
 }
 
 ?>
