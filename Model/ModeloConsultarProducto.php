@@ -13,7 +13,7 @@ class ModeloConsultarProducto{
         return $resultado;
     }
         public function ConsultarProductoNombre($nombreProducto, $sucursal =null){
-        $queryNombre = "SELECT * FROM PRODUCTO WHERE (NOMBRE_PRODUCTO) = ('$nombreProducto')";
+        $queryNombre = "SELECT * FROM PRODUCTO WHERE (NOMBRE_PRODUCTO) like ('%$nombreProducto%')";
         if($sucursal !==null){
             $queryNombre = "AND SUCURSAL_PRODUCTO = '$sucursal'";
         }
