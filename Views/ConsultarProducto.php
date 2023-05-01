@@ -1,10 +1,8 @@
 <script>
-
 function soloNumeros(e) {
 var key = window.Event ? e.which : e.keyCode
     return (key >= 48 && key <= 57)
 }
-
 function validar(){
     mensaje="";
     var codigoProducto = document.getElementById("codigoProducto").value;
@@ -40,15 +38,14 @@ function validar(){
         <input type="text"  id="codigoProducto" name="codigoProducto" onkeypress="return soloNumeros(event)">
         Nombre Producto
          <input type="text"	id="nombreProducto" name="NombreProducto">
- <!--       <label for="sucursal">Sucursal</label>
+         <label for="sucursal">Sucursal</label>
             <select id="sucursal" name="sucursal">
             <option disabled selected value>-- Selecciona Sucursal -- </option>
             <option value="Santiago">Santiago</option>
             <option value="Concepción">Concepción</option>
             <option value="La Serena">La Serena</option>
         </select>
-        </br></br> -->
-        
+        </br></br>
         <button type="submit">Buscar Producto</button>
         <input type="button" value="Home" id="botonVolver" OnClick="location.href='../Views/home.php'">
     </form>
