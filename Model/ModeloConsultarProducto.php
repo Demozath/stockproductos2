@@ -22,5 +22,13 @@ class ModeloConsultarProducto{
         mysqli_close($link);
         return $resultadoNombre;
         }
+        public function ConsultarSucursal($sucursal){
+        $queryNombre = "SELECT * FROM PRODUCTO WHERE (SUCURSAL_PRODUCTO) like ('%$sucursal%')";
+        $link = Conexion::conecta();
+        $resultadoNombre = mysqli_query($link, $queryNombre);
+        mysqli_close($link);
+        return $resultadoNombre;
+        }
+        
     }
 ?>

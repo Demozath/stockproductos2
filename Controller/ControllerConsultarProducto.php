@@ -12,6 +12,9 @@ if($codigoProducto){
 else if($nombreProducto){
     $resultado = $objlus->ConsultarProductoNombre($nombreProducto, $sucursal);
 }
+else if($sucursal){
+    $resultado = $objlus->ConsultarSucursal($sucursal);
+}
 
 ?>
 <html>
