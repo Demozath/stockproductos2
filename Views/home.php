@@ -12,7 +12,7 @@
     <div id="accionesProductos">
         <input type="button" value="Asignar Producto a sucursal" id="botonAsignar" name="B4" OnClick="location.href='ViewAsignarProducto.php' ">
         <input type="button" value="Consultar Producto por código, nombre y sucursal" id="botonConsulta" name="B4" OnClick="location.href='ViewConsultarProducto.php' ">
-        <input type="button" value="Dar de baja Producto" id="botonEliminar" name="B4" OnClick="location.href='eliminarProducto.php' ">
+        <input type="button" value="Dar de baja Producto" id="botonEliminar" name="B4" OnClick="location.href='ViewEliminarProducto.php' ">
         <input type="button" value="Actualizar Producto" id="botonActualizar" name="B4" OnClick="location.href='ViewActualizarProducto.php' ">
     </div>
 </body> 

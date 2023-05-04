@@ -8,7 +8,7 @@ $descripcionProducto = $_POST['descripcionProducto'];
 
 
 $objMAP = new ModeloActualizarProducto();
-$msj = $objMAP->ActualizarProducto2($codigoProducto, $nombreProducto, $precioProducto, $descripcionProducto);
+$msj = $objMAP->ActualizarProducto($codigoProducto, $nombreProducto, $precioProducto, $descripcionProducto);
 
 echo "<center><h1>".$msj."</h1></center>";
 ?>

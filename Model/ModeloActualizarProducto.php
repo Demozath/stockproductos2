@@ -4,7 +4,7 @@ include('conexion.php');
 
 class ModeloActualizarProducto
 {
-    public function ActualizarProducto2($codigoProducto, $nombreProducto, $precioProducto, $descripcionProducto)
+    public function ActualizarProducto($codigoProducto, $nombreProducto, $precioProducto, $descripcionProducto)
     {
         $query = "UPDATE PRODUCTO SET NOMBRE_PRODUCTO = '$nombreProducto', DESCRIPCION_PRODUCTO = '$descripcionProducto', PRECIO_PRODUCTO = $precioProducto WHERE CODIGO_PRODUCTO = '$codigoProducto'";
         $stringConnection = Conexion::conecta();
