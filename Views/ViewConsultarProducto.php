@@ -32,7 +32,7 @@ function validar(){
 </head>
 <body>
     <h1>Consultar Producto</h1><br>
-    
+
     <form id="formulario" action="../Controller/ControllerConsultarProducto.php" method="POST" onsubmit="return validar()">
         Codigo Producto
         <input type="text"  id="codigoProducto" name="codigoProducto" onkeypress="return soloNumeros(event)">

@@ -10,7 +10,7 @@ $descripcionProducto = $_POST['descripcionProducto'];
 $objMAP = new ModeloActualizarProducto();
 $msj = $objMAP->ActualizarProducto2($codigoProducto, $nombreProducto, $precioProducto, $descripcionProducto);
 
-echo $msj;
+echo "<center><h1>".$msj."</h1></center>";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +18,7 @@ echo $msj;
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Estilos/estiloController.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
 <body>
