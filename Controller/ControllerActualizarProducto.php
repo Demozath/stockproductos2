@@ -1,44 +1,26 @@
 <?php
-include('../Model/ModeloConsultarProducto.php');
+include('../Model/ModeloActualizarProducto.php');
 
-$nombreProducto = isset($_POST['NombreProducto']) ? $_POST['NombreProducto'] : null; 
-$objlus = new ModeloConsultarProducto();
-
-if($codigoProducto){
-    $resultado =$objlus->ConsultarProducto($codigoProducto);
-}
+$codigoProducto = $_POST['codigoProducto'];
+$nombreProducto = $_POST['nombreProducto'];
+$precioProducto = $_POST['precioProducto'];
+$descripcionProducto = $_POST['descripcionProducto'];
 
 
+$objMAP = new ModeloActualizarProducto();
+$msj = $objMAP->ActualizarProducto2($codigoProducto, $nombreProducto, $precioProducto, $descripcionProducto);
+
+echo $msj;
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link href="../Estilos/estiloController.css" rel="stylesheet" type="text/css">
-    <title>Consultar Productos</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <center><h1>Productos - Búsqueda</h1></center><br>
-    <table>
-        <tr>
-            <th>Codigo</th> 
-            <th>Nombre</th> 
-            <th>Categoria</th> 
-            <th>Descripcion</th> 
-            <th>Sucursal</th> 
-            <th>Cantidad</th> 
-            <th>Precio</th> 
-        </tr>
-<?php
-foreach ($resultado as $fila) { 
-    $codigoProducto = $fila['CODIGO_PRODUCTO'];
-    $nombreProducto = $fila['NOMBRE_PRODUCTO'];
-    $categoriaProducto = $fila['CATEGORIA_PRODUCTO'];
-    $descripcion = $fila['DESCRIPCION_PRODUCTO'];
-    $sucursal = $fila['SUCURSAL_PRODUCTO'];
-    $cantidadProducto = $fila['CANTIDAD_PRODUCTO'];
-    $precioProducto = $fila['PRECIO_PRODUCTO'];
-
-    echo '<tr><td>'.$codigoProducto.'</td> <td>'.$nombreProducto.'</td> <td>'.$categoriaProducto.'</td> <td>'.$descripcion.'</td> <td>'.$sucursal.'</td> <td>'.$cantidadProducto.'</td> <td>'.$precioProducto.'</td></tr>';
-}
-?>
-</table>
-<input type="button" value="Ir al Home" id="botonHome" OnClick="location.href='../Views/home.php' ">
+<input type="button" value="Home" id="botonVolver" OnClick="location.href='../Views/home.php'">
+</body>
+</html>

@@ -49,3 +49,5 @@ foreach ($resultado as $fila) {
 ?>
 </table>
 <input type="button" value="Ir al Home" id="botonHome" OnClick="location.href='../Views/home.php' ">
+
+
