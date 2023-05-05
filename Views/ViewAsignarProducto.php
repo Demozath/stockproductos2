@@ -7,10 +7,6 @@ var key = window.Event ? e.which : e.keyCode
 
 function validar(){
     mensaje="";
-/*     var  productoId = document.getElementById("productoID").value;
-    if (productoId=="") {
-        mensaje=mensaje+"*ID Producto NO ingresado \n";
-    } */
     var codigoProducto = document.getElementById("codigoProducto").value;
     if (codigoProducto=="") {
         mensaje=mensaje+"* Codigo Producto NO ingresado \n";
@@ -55,10 +51,8 @@ function validar(){
 </head>
 <body>
     <h1>Registro de Producto</h1><br>
-    
+
     <form id="formulario" action="../Controller/ControllerAsignarProducto.php" method="POST" onsubmit="return validar()">
-<!--         Id Producto
-        <input type="text" id="productoID"	name="productoID"> -->
         Codigo Producto
         <input type="text"  id="codigoProducto" name="codigoProducto" onkeypress="return soloNumeros(event)">
         Nombre Producto

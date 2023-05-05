@@ -6,7 +6,6 @@ $nombreProducto = $_POST['nombreProducto'];
 $precioProducto = $_POST['precioProducto'];
 $descripcionProducto = $_POST['descripcionProducto'];
 
-
 $objMAP = new ModeloActualizarProducto();
 $msj = $objMAP->ActualizarProducto($codigoProducto, $nombreProducto, $precioProducto, $descripcionProducto);
 

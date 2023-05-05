@@ -3,16 +3,12 @@
 $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
 
-
 if ($usuario == "admin"&&$contrasena == '123'){
     $statusConexionAdmin = "Administrador";
-    //echo "Bienvenido al sistema de gestión de Stock, te haz logeado como usuario ADMINISTRADOR";
 }
 else{
-    //echo "Bienvenido al sistema de gestión de Stock, te haz logeado como usuario NORMAL";
     $statusConexionAdmin = "Normal";
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -36,13 +32,8 @@ else{
             <td>Tipo Cuenta :</td>
             <td><?php echo $statusConexionAdmin ?></td>
         </tr>
-
     </tbody>
-
 </table>
-
 <input type="button" value="Ir al Home" id="botonHome" OnClick="location.href='../Views/home.php' ">
-
-
 </body>
 </html>

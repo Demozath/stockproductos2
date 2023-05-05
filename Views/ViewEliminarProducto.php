@@ -11,7 +11,6 @@ function soloNumeros(e) {
 var key = window.Event ? e.which : e.keyCode
     return (key >= 48 && key <= 57)
 }
-
 </script>
 
 <!DOCTYPE html>
@@ -30,6 +29,5 @@ var key = window.Event ? e.which : e.keyCode
     <input type="text" id="codigoProducto" name="codigoProducto" onkeypress="return soloNumeros(event)">
     <button type="submit">Eliminar Producto</button>
     <input type="button" value="Home" id="botonVolver" OnClick="location.href='../Views/home.php'">
-    
 </body>
 </html>
