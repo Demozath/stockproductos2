@@ -4,6 +4,16 @@ include('conexion.php');
 
 class ModeloEliminarProducto
 {
+
+    public function ConsultarProducto($codigoProducto)
+    {
+        $query = "SELECT * FROM producto WHERE (CODIGO_PRODUCTO) = ($codigoProducto)";
+        $link = conexion::conecta();
+        $resultado = mysqli_query($link, $query);
+        mysqli_close($link);
+        return $resultado;
+    }
+
     public function EliminarProducto($codigoProducto)
     {
         $query = "DELETE FROM PRODUCTO WHERE CODIGO_PRODUCTO = $codigoProducto";
@@ -24,4 +34,5 @@ class ModeloEliminarProducto
         return $msj;
     }
 }
+
 ?>
